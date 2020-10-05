@@ -89,6 +89,7 @@ activity_by_date <- aggregate(steps~interval + datetype, activity, mean, na.rm =
 ggplot(activity_by_date, aes(x = interval , y = steps, color = datetype)) 
 print(plot)
 
+knitr::knit2html(input = "PA1_template.md", output = "CourseProject1")
 ```
 
 
